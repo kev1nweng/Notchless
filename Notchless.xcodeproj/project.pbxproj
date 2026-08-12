@@ -1,0 +1,446 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 54;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		168BDE9A22F933E8DFAE0E52 /* NotchlessTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0310732E33F953AB761E40E1 /* NotchlessTests.swift */; };
+		3F16665154A6BBC1E6D682AE /* Localizable.xcstrings in Resources */ = {isa = PBXBuildFile; fileRef = BBC9C0EFBAB9940F32E9BC91 /* Localizable.xcstrings */; };
+		46E28FAE89029D94BB88CE63 /* NotchlessModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0C301BAC8D352CB3253FE356 /* NotchlessModel.swift */; };
+		E5F9822D99E3240E6C4AA439 /* NotchlessApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = C5CD4D8088B0C175C157901D /* NotchlessApp.swift */; };
+		E9E23D53484FB44AD0A9F8C0 /* MenuBarOverlayController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 37E4E7B7C7909EBCE989C7F8 /* MenuBarOverlayController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		C6EADE2F9720F2092FEA1B06 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 08891B146850EC86CF9FCC47 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 997F41A37FEC39DA1B7DC3DD;
+			remoteInfo = Notchless;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		0310732E33F953AB761E40E1 /* NotchlessTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchlessTests.swift; sourceTree = "<group>"; };
+		0C301BAC8D352CB3253FE356 /* NotchlessModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchlessModel.swift; sourceTree = "<group>"; };
+		32124AF7D00009638CC6909B /* Notchless.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Notchless.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		37E4E7B7C7909EBCE989C7F8 /* MenuBarOverlayController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MenuBarOverlayController.swift; sourceTree = "<group>"; };
+		BBC9C0EFBAB9940F32E9BC91 /* Localizable.xcstrings */ = {isa = PBXFileReference; lastKnownFileType = text.json.xcstrings; path = Localizable.xcstrings; sourceTree = "<group>"; };
+		C576F11DB9CD3F28356FB7F6 /* NotchlessTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = NotchlessTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		C5CD4D8088B0C175C157901D /* NotchlessApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotchlessApp.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0C83577C625F77D9B4AEA7E8 /* Overlay */ = {
+			isa = PBXGroup;
+			children = (
+				37E4E7B7C7909EBCE989C7F8 /* MenuBarOverlayController.swift */,
+			);
+			path = Overlay;
+			sourceTree = "<group>";
+		};
+		159EADD7740615D22B5AA8B1 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				C5CD4D8088B0C175C157901D /* NotchlessApp.swift */,
+				0C301BAC8D352CB3253FE356 /* NotchlessModel.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		82087BA3AC8BCFF08CA9F3FA /* Notchless */ = {
+			isa = PBXGroup;
+			children = (
+				159EADD7740615D22B5AA8B1 /* App */,
+				0C83577C625F77D9B4AEA7E8 /* Overlay */,
+				F39AB7416DE79B6BCD4716EE /* Resources */,
+			);
+			path = Notchless;
+			sourceTree = "<group>";
+		};
+		904626937C02FFC384F166E9 = {
+			isa = PBXGroup;
+			children = (
+				82087BA3AC8BCFF08CA9F3FA /* Notchless */,
+				9713A1C20CFE0C4412CFE659 /* NotchlessTests */,
+				F7FC90E4F66DAAE0DB7DAC51 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		9713A1C20CFE0C4412CFE659 /* NotchlessTests */ = {
+			isa = PBXGroup;
+			children = (
+				0310732E33F953AB761E40E1 /* NotchlessTests.swift */,
+			);
+			path = NotchlessTests;
+			sourceTree = "<group>";
+		};
+		F39AB7416DE79B6BCD4716EE /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				BBC9C0EFBAB9940F32E9BC91 /* Localizable.xcstrings */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F7FC90E4F66DAAE0DB7DAC51 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				32124AF7D00009638CC6909B /* Notchless.app */,
+				C576F11DB9CD3F28356FB7F6 /* NotchlessTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		6128A9632ACC6AF6FF587EAF /* NotchlessTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = BB057624F260939F36FD0EDF /* Build configuration list for PBXNativeTarget "NotchlessTests" */;
+			buildPhases = (
+				930E5B2E737DCF2275F7DBEA /* Sources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				82BC91077B5B8245128C99E6 /* PBXTargetDependency */,
+			);
+			name = NotchlessTests;
+			packageProductDependencies = (
+			);
+			productName = NotchlessTests;
+			productReference = C576F11DB9CD3F28356FB7F6 /* NotchlessTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		997F41A37FEC39DA1B7DC3DD /* Notchless */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 34834583B775BFF295289FD8 /* Build configuration list for PBXNativeTarget "Notchless" */;
+			buildPhases = (
+				83DA0496306E548E2E258C27 /* Sources */,
+				0624C30F59F6BC07913E6F91 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Notchless;
+			packageProductDependencies = (
+			);
+			productName = Notchless;
+			productReference = 32124AF7D00009638CC6909B /* Notchless.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		08891B146850EC86CF9FCC47 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1430;
+				TargetAttributes = {
+					6128A9632ACC6AF6FF587EAF = {
+						ProvisioningStyle = Automatic;
+					};
+					997F41A37FEC39DA1B7DC3DD = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F99D7D3616A5B04EF1C9B748 /* Build configuration list for PBXProject "Notchless" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+				"zh-Hans",
+				"zh-Hant",
+			);
+			mainGroup = 904626937C02FFC384F166E9;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 54;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				997F41A37FEC39DA1B7DC3DD /* Notchless */,
+				6128A9632ACC6AF6FF587EAF /* NotchlessTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0624C30F59F6BC07913E6F91 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3F16665154A6BBC1E6D682AE /* Localizable.xcstrings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		83DA0496306E548E2E258C27 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				E9E23D53484FB44AD0A9F8C0 /* MenuBarOverlayController.swift in Sources */,
+				E5F9822D99E3240E6C4AA439 /* NotchlessApp.swift in Sources */,
+				46E28FAE89029D94BB88CE63 /* NotchlessModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		930E5B2E737DCF2275F7DBEA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				168BDE9A22F933E8DFAE0E52 /* NotchlessTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		82BC91077B5B8245128C99E6 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 997F41A37FEC39DA1B7DC3DD /* Notchless */;
+			targetProxy = C6EADE2F9720F2092FEA1B06 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		42F2D98D4408203BEE929024 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.notchless.app;
+				PRODUCT_NAME = Notchless;
+				SDKROOT = macosx;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Release;
+		};
+		482026F9EF36A4F665713DB1 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Notchless;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		619F13CE59C387582F6295B4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = Notchless;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		71D1AB2FB163C703348A192B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.notchless.tests;
+				PRODUCT_MODULE_NAME = NotchlessTests;
+				PRODUCT_NAME = NotchlessTests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Notchless.app/Contents/MacOS/Notchless";
+			};
+			name = Release;
+		};
+		7E9A0BC852A2A9AA58A6A753 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_HARDENED_RUNTIME = YES;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_LSUIElement = YES;
+				MACOSX_DEPLOYMENT_TARGET = 14.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_BUNDLE_IDENTIFIER = com.notchless.app;
+				PRODUCT_NAME = Notchless;
+				SDKROOT = macosx;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_STRICT_CONCURRENCY = complete;
+				SWIFT_VERSION = 6.0;
+			};
+			name = Debug;
+		};
+		D32810C397D13EFAEA189A39 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				COMBINE_HIDPI_IMAGES = YES;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+					"@loader_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.notchless.tests;
+				PRODUCT_MODULE_NAME = NotchlessTests;
+				PRODUCT_NAME = NotchlessTests;
+				SDKROOT = macosx;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Notchless.app/Contents/MacOS/Notchless";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		34834583B775BFF295289FD8 /* Build configuration list for PBXNativeTarget "Notchless" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				619F13CE59C387582F6295B4 /* Debug */,
+				482026F9EF36A4F665713DB1 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		BB057624F260939F36FD0EDF /* Build configuration list for PBXNativeTarget "NotchlessTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D32810C397D13EFAEA189A39 /* Debug */,
+				71D1AB2FB163C703348A192B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F99D7D3616A5B04EF1C9B748 /* Build configuration list for PBXProject "Notchless" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7E9A0BC852A2A9AA58A6A753 /* Debug */,
+				42F2D98D4408203BEE929024 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 08891B146850EC86CF9FCC47 /* Project object */;
+}
