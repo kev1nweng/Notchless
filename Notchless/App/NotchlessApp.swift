@@ -8,6 +8,7 @@ struct NotchlessApp: App {
         MenuBarExtra {
             Toggle("Hide Notch", isOn: $model.isEnabled)
             Toggle("Hide on Lock Screen", isOn: $model.automaticallyHidesOnLock)
+            Toggle("Launch at Login", isOn: $model.launchesAtLogin)
 
             Divider()
 
@@ -17,5 +18,10 @@ struct NotchlessApp: App {
             Label("Notchless", systemImage: model.isEnabled ? "rectangle.topthird.inset.filled" : "rectangle.topthird.inset")
         }
         .menuBarExtraStyle(.menu)
+        .onChange(of: NSApplication.shared.isActive) { _, isActive in
+            if isActive {
+                model.refreshLaunchAtLoginStatus()
+            }
+        }
     }
 }
