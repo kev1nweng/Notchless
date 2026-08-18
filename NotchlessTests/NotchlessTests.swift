@@ -1,8 +1,16 @@
+import AppKit
 import Foundation
 import Testing
 @testable import Notchless
 
 struct NotchlessTests {
+    @Test @MainActor
+    func overlayPanelsJoinEverySpace() {
+        let behavior = MenuBarOverlayController.panelCollectionBehavior
+        #expect(behavior.contains(.canJoinAllSpaces))
+        #expect(behavior.contains(.stationary))
+    }
+
     @Test @MainActor
     func modelDefaultsToEnabled() {
         UserDefaults.standard.removeObject(forKey: "isEnabled")

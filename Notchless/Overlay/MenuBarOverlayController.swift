@@ -2,6 +2,13 @@ import AppKit
 
 @MainActor
 final class MenuBarOverlayController {
+    static let panelCollectionBehavior: NSWindow.CollectionBehavior = [
+        .canJoinAllSpaces,
+        .stationary,
+        .ignoresCycle,
+        .fullScreenNone,
+    ]
+
     private var panels: [CGDirectDisplayID: MenuBarOverlayPanel] = [:]
     private var observers: [NSObjectProtocol] = []
     private var distributedObservers: [NSObjectProtocol] = []
@@ -28,9 +35,8 @@ final class MenuBarOverlayController {
             queue: .main
         ) { [weak self] _ in
             MainActor.assumeIsolated {
-                // A stationary panel is not assigned to each individual Space.
-                // Re-order it after the transition so WindowServer keeps it
-                // immediately behind the newly active menu bar.
+                // Refresh the z-order after the transition so each Space's
+                // panel representation remains immediately behind its menu bar.
                 self?.orderPanels()
             }
         })
@@ -204,11 +210,10 @@ private final class MenuBarOverlayPanel: NSPanel {
         isMovable = false
         animationBehavior = .none
         isExcludedFromWindowsMenu = true
-        // Do not use `.canJoinAllSpaces`: WindowServer creates a Space-bound
-        // representation for that mode, which fades with the outgoing desktop.
-        // A stationary, non-full-screen panel stays fixed while desktops slide
-        // underneath it and is excluded from full-screen Spaces.
-        collectionBehavior = [.stationary, .ignoresCycle, .fullScreenNone]
+        // The system menu bar also joins every Space. `.stationary` alone only
+        // affects Mission Control and does not make the panel visible on other
+        // desktops.
+        collectionBehavior = MenuBarOverlayController.panelCollectionBehavior
     }
 
     override var canBecomeKey: Bool { false }
